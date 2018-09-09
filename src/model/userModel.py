@@ -6,7 +6,7 @@ import pymysql
 import datetime
 from functools import wraps
 '''connection = pymysql.connect(host = 'localhost',user = 'root',port = 3306,password = '',database = 'hospital')'''
-connection = pymysql.connect(host = 'l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user = 'pwpx9lp53pp7oobn',port = 3306,password = 'q4f6xa3l2ter9vvk',database = 'hospital')
+connection = pymysql.connect(host = 'l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user = 'pwpx9lp53pp7oobn',port = 3306,password = 'q4f6xa3l2ter9vvk',database = 'hrnvjd7k86z6nj96')
 
 
 from flask_restful import reqparse,Resource,request
