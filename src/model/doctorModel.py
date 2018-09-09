@@ -3,7 +3,8 @@ import datetime
 from .userModel import UserModel
 import uuid
 from werkzeug.security import generate_password_hash
-connection = pymysql.connect(host = 'localhost',user = 'root',port = 3306,password = '',database = 'hospital')
+
+connection = pymysql.connect(host = 'l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user = 'pwpx9lp53pp7oobn',port = 3306,password = 'q4f6xa3l2ter9vvk',database = 'hrnvjd7k86z6nj96')
 
 class DoctorModel:
     

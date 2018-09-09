@@ -12,6 +12,7 @@ from model.userModel import UserModel
 
 
 app = Flask('__name__')
+app.config['JAWSDB_URL']= 'mysql://pwpx9lp53pp7oobn:q4f6xa3l2ter9vvk@l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/hrnvjd7k86z6nj96'
 app.config['secret_key'] = 'OLURIN ANUOLUWAPO'
 api = Api(app)
 parser = reqparse.RequestParser()
