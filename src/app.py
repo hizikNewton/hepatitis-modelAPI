@@ -8,7 +8,7 @@ from src.resource.doctor import Doctor,DoctorRecord
 from src.resource.user import User,UserLogin
 from src.resource.record import Record
 
-from model.userModel import UserModel
+from src.model.userModel import UserModel
 
 
 app = Flask('__name__')
