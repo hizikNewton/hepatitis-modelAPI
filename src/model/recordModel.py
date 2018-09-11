@@ -1,8 +1,8 @@
 import pymysql
 from .hospitalModel import HospitalModel
 
-connection = pymysql.connect(host = 'l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user = 'pwpx9lp53pp7oobn',port = 3306,password = 'q4f6xa3l2ter9vvk',database = 'hrnvjd7k86z6nj96')
 
+connection = pymysql.connect(host ='w29ifufy55ljjmzq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user = 'a11ebo308uf0dhrm',port = 3306,password = 'tywq3fh90wnc0qdq',database = 'newcz2i2298jb65b')
 
 class RecordModel:
     def __init__(self):

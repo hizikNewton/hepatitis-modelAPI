@@ -4,8 +4,8 @@ from .userModel import UserModel
 import uuid
 from werkzeug.security import generate_password_hash
 
-connection = pymysql.connect(host = 'l3855uft9zao23e2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user = 'pwpx9lp53pp7oobn',port = 3306,password = 'q4f6xa3l2ter9vvk',database = 'hrnvjd7k86z6nj96')
 
+connection = pymysql.connect(host ='w29ifufy55ljjmzq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user= 'a11ebo308uf0dhrm',port = 3306,password = 'tywq3fh90wnc0qdq',database = 'newcz2i2298jb65b')
 class DoctorModel:
     
     def __init__(self,hospital_name,doctor_surname='',doctor_name='',spec='',biodata=''):
