@@ -61,10 +61,10 @@ class UserLogin(Resource):
         result = user.login(auth)
         return(result)
 
-    @UserModel.token_required
-    def put(current_user,self,userid):
-        if not (current_user['admin']):
-            return({"message":"cannot update patient"}),401
+    '''@UserModel.token_required'''
+    def put(self,userid):
+        '''if not (current_user['admin']):
+            return({"message":"cannot update patient"}),401'''
         user = UserModel()
         result = user.promote_user_admin(userid)
         return(result),200

@@ -5,8 +5,7 @@ from flask import make_response
 import pymysql
 import datetime
 from functools import wraps 
-'''connection= pymysql.connect(host = 'localhost',user = 'root',port = 3306,password = '',database = 'hospital')
-'''
+
 connection = pymysql.connect(host ='w29ifufy55ljjmzq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',user = 'a11ebo308uf0dhrm',port = 3306,password = 'tywq3fh90wnc0qdq',database = 'newcz2i2298jb65b')
 
 from flask_restful import reqparse,Resource,request
@@ -164,7 +163,7 @@ class UserModel():
             return("id not found"),404
 
 
-    def delete_user_table(self):
+    '''def delete_user_table(self):
         with connection.cursor() as cursor:
             query = ("DROP TABLE users")
             try:
@@ -172,7 +171,7 @@ class UserModel():
                 connection.commit()
             except:
                 return({"message":"Error deleting table user"})
-            return({"message":"User table deleted successfully"}),200
+            return({"message":"User table deleted successfully"}),200'''
 
     def login(self,auth):
         if (not auth or not auth['username'] or not auth['password']):
@@ -182,7 +181,7 @@ class UserModel():
         if not user:
             return make_response("incorrect username/password",401,{'WWW-Authenticate':'Basic Realm="Login Required!'})
         if  check_password_hash(user['password'],auth['password']):
-            token = jwt.encode({"user_id":user['userid'],"exp":datetime.datetime.utcnow() + datetime.timedelta(minutes = 30)},'OLURIN ANUOLUWAPO')
+            token = jwt.encode({"user_id":user['userid'],"exp":datetime.datetime.utcnow() + datetime.timedelta(minutes = 100)},'OLURIN ANUOLUWAPO')
             
             return ({"token":f"{token}"})
 
