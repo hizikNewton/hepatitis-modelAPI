@@ -1,1 +1,1 @@
-web: uwsgi.ini
+web: python uwsgi.ini
