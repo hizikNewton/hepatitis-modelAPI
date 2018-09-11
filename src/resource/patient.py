@@ -2,8 +2,8 @@ from flask_restful import Api,reqparse
 from flask_jwt import jwt_required
 import json
 from flask_restful import Resource
-from model.patientModel import PatientModel
-from model.hospitalModel import HospitalModel
+from src.model.patientModel import PatientModel
+from src.model.hospitalModel import HospitalModel
 
 from model.userModel import UserModel
 

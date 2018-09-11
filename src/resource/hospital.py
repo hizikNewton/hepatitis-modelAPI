@@ -4,8 +4,8 @@ import json
 from flask_restful import Resource
 
 
-from model.hospitalModel import HospitalModel
-from model.userModel import UserModel
+from src.model.hospitalModel import HospitalModel
+from src.model.userModel import UserModel
 
 class Hospital(Resource):
 

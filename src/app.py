@@ -3,10 +3,10 @@ from flask_restful import Api,reqparse
 from flask_jwt import JWT,jwt_required,jwt
 
 from src.resource.hospital import Hospital,Hospitals
-from resource.patient import Patient,PatientList
-from resource.doctor import Doctor,DoctorRecord
-from resource.user import User,UserLogin
-from resource.record import Record
+from src.resource.patient import Patient,PatientList
+from src.resource.doctor import Doctor,DoctorRecord
+from src.resource.user import User,UserLogin
+from src.resource.record import Record
 
 from model.userModel import UserModel
 

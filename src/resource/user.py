@@ -2,7 +2,7 @@ from flask_jwt import jwt_required
 import json
 from flask_restful import Resource,reqparse
 from flask import request
-from model.userModel import UserModel
+from src.model.userModel import UserModel
 
 
 class User(Resource):

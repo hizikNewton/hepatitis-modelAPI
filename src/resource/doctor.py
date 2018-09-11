@@ -2,8 +2,8 @@ from flask_restful import Api,reqparse
 from flask_jwt import jwt_required
 import json
 from flask_restful import Resource
-from model.doctorModel import DoctorModel
-from model.userModel import UserModel
+from src.model.doctorModel import DoctorModel
+from src.model.userModel import UserModel
 
 class Doctor(Resource):
     

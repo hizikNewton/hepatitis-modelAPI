@@ -2,7 +2,7 @@ from flask_restful import Api,reqparse
 from flask_jwt import jwt_required
 import json
 from flask_restful import Resource
-from model.recordModel import RecordModel
+from src.model.recordModel import RecordModel
 
 class Record(Resource):
     def post(self,hospital_name):
