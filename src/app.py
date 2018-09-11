@@ -2,7 +2,7 @@ from flask import Flask,jsonify,request
 from flask_restful import Api,reqparse
 from flask_jwt import JWT,jwt_required,jwt
 
-from resource.hospital import Hospital,Hospitals
+from src.resource.hospital import Hospital,Hospitals
 from resource.patient import Patient,PatientList
 from resource.doctor import Doctor,DoctorRecord
 from resource.user import User,UserLogin
