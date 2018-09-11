@@ -5,7 +5,7 @@ from flask_restful import Resource
 from src.model.patientModel import PatientModel
 from src.model.hospitalModel import HospitalModel
 
-from model.userModel import UserModel
+from src.model.userModel import UserModel
 
 
 class Patient(Resource):
