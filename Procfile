@@ -1,1 +1,1 @@
-web:python gunicorn -w 4 app:app
+web:uwsgi --socket /tmp/uwsgi.sock --socket 0.0.0.0:8000 --master --workers 3
