@@ -181,7 +181,7 @@ class UserModel():
         if not user:
             return make_response("incorrect username/password",401,{'WWW-Authenticate':'Basic Realm="Login Required!'})
         if  check_password_hash(user['password'],auth['password']):
-            token = jwt.encode({"user_id":user['userid'],"exp":datetime.datetime.utcnow() + datetime.timedelta(minutes = 100)},'OLURIN ANUOLUWAPO')
+            token = jwt.encode({"user_id":user['userid'],"exp":datetime.datetime.utcnow() + datetime.timedelta(minutes = 1000)},'OLURIN ANUOLUWAPO')
             
             return ({"token":f"{token}"})
 

@@ -9,10 +9,10 @@ from src.model.userModel import UserModel
 
 class Hospital(Resource):
 
-    '''@UserModel.token_required'''
+    @UserModel.token_required
     def post(self):
-        '''if not current_user['admin']:
-            return({"message":"cannot create hospital"}),401'''
+        if not current_user['admin']:
+            return({"message":"cannot create hospital"}),401
         parser = reqparse.RequestParser()
         parser.add_argument(
         'hospital_name',

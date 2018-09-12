@@ -48,10 +48,10 @@ class Doctor(Resource):
         return "Doctor created",201
 
     
-    @UserModel.token_required
-    def get(current_user,self,hospital_name,id):
-        if not (current_user['isdoctor'] or current_user['admin']):
-            return({"message":"cannot create hospital"}),401
+    '''@UserModel.token_required current_user,'''
+    def get(self,hospital_name,id):
+        '''if not (current_user['isdoctor'] or current_user['admin']):
+            return({"message":"cannot create hospital"}),401'''
         doctor=DoctorModel(hospital_name)
         data = doctor.get_doctor_record(id,hospital_name)
         return(data),200
